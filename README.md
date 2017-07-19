@@ -299,9 +299,9 @@ compressBySampleSize
 ```
 
 * ### About Intent→[IntentUtils.java][intent.java]
-```
 getLauncherIntent   拦截 Back 键，使 App 进入后台而不是关闭
-==============================================================================================================
+======================================================================================================
+```
 getInstallAppIntent
 getUninstallAppIntent
 getLaunchAppIntent
