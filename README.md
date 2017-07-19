@@ -47,7 +47,8 @@ Activity生命周期必走的回调接口
 
 *  ### DrawableUtil
 ```
-代码定义shape资源和Selector资源
+getDrawable   定义一个shape资源
+getSelector   定义一个Selector资源
 ```
 
 *  ### GlideImage
