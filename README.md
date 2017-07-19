@@ -659,6 +659,31 @@ getEntries
 * **I'm so sorry for that the code is annotated with Chinese.**
 
 
+## Download
+
+Gradle:
+``` groovy
+compile 'com.blankj:utilcode:1.7.1'
+```
+
+
+## How to use
+
+```
+// init it in the function of onCreate in ur Application
+Utils.init(context);
+```
+
+
+## Proguard
+
+```
+-keep class com.blankj.utilcode.** { *; }
+-keepclassmembers class com.blankj.utilcode.** { *; }
+-dontwarn com.blankj.utilcode.**
+```
+
+
 
 [aucsvg]: https://img.shields.io/badge/AndroidUtilCode-v1.7.1-brightgreen.svg
 [auc]: https://github.com/Blankj/AndroidUtilCode
