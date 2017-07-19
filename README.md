@@ -326,8 +326,8 @@ clickBlankArea2HideSoftInput
 isGpsEnabled
 isLocationEnabled
 openGpsSettings
-register
-unregister
+register                  使用了第三方Android6.0动态权限
+unregister                使用了第三方Android6.0动态权限
 getAddress
 getCountryName
 getLocality
