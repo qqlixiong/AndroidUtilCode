@@ -664,6 +664,7 @@ getEntries
 Gradle:
 ``` groovy
 compile 'com.blankj:utilcode:1.7.1'
+此Gradle库不全，建议不要直接导入，可以把我的源码下载下来，再导入APP
 ```
 
 
