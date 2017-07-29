@@ -6,6 +6,76 @@
 
 ## API
 
+### sortLib
+####  写好了所有与排序算法相关的类
+
+###  adapter
+*  ###  ModelRecyclerAdapter    
+```
+RecyclerView 通用适配器第一版
+```
+* ###  RecyclerItemViewId
+```
+RecyclerView   layout注解类
+```
+
+ ###   base
+* ###   BaseCustomDialog
+```
+自定义对话框
+```
+
+* ###   BaseHolder
+```
+viewHolder编程的base
+```
+
+###  common
+* ### ActivityLifecycleCallbacks  
+```
+Activity生命周期必走的回调接口
+```
+*  ### AppManger
+```
+应用程序Activity管理工具类，用于Activity的管理和应用程序的退出
+```
+
+*  ### CustomCountDownTimer
+```
+倒计时
+```
+
+*  ### DrawableUtil
+```
+getDrawable   定义一个shape资源
+getSelector   定义一个Selector资源
+```
+
+*  ### GlideImage
+```
+图片加载库
+```
+
+*  ### PwdManger
+```
+管理密码的显示和隐藏
+```
+
+*  ### RecyclerViewUtil
+```
+万能RecyclerView的工具类
+```
+
+*  ### UIUtils
+```
+界面相关的工具类
+```
+
+*  ### ViewUtils
+```
+控件相关的工具类
+```
+
 * ### About Activity→[ActivityUtils.java][activity.java]→[Demo][activity.demo]
 ```
 isActivityExists
@@ -299,6 +369,8 @@ compressBySampleSize
 ```
 
 * ### About Intent→[IntentUtils.java][intent.java]
+getLauncherIntent   拦截 Back 键，使 App 进入后台而不是关闭
+======================================================================================================
 ```
 getInstallAppIntent
 getUninstallAppIntent
@@ -324,8 +396,8 @@ clickBlankArea2HideSoftInput
 isGpsEnabled
 isLocationEnabled
 openGpsSettings
-register
-unregister
+register                  使用了第三方Android6.0动态权限
+unregister                使用了第三方Android6.0动态权限
 getAddress
 getCountryName
 getLocality
@@ -664,6 +736,7 @@ getEntries
 Gradle:
 ``` groovy
 compile 'com.blankj:utilcode:1.7.1'
+此Gradle库不全，建议不要直接导入，可以把我的源码下载下来，再导入APP
 ```
 
 
