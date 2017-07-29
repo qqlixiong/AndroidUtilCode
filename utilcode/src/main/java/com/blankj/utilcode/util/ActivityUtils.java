@@ -26,7 +26,6 @@ import java.util.Map;
  *     desc  : Activity相关工具类
  * </pre>
  */
-@RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN)
 public final class ActivityUtils {
 
     private ActivityUtils() {
@@ -198,7 +197,9 @@ public final class ActivityUtils {
         if (options == null || Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
             context.startActivity(intent);
         } else {
-            context.startActivity(intent, options);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+                context.startActivity(intent, options);
+            }
         }
     }
 
